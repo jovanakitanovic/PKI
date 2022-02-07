@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="4dp"
+        android:elevation="0dp"
+        app:cardElevation="0dp">
+
+
+        <LinearLayout
+            android:id="@+id/frontPageBooksLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#B3B3B3"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageFrontPage"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"></ImageView>
+
+            <TextView
+                android:id="@+id/frontPageBookName"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:breakStrategy="simple"
+                android:gravity="center"
+                android:text="book name"
+                android:textColor="@color/black"
+                android:textSize="8dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/frontPageBookAuthor"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="autor knjige"
+                android:textColor="@color/black"
+                android:textSize="8dp"></TextView>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
