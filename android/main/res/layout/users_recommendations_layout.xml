@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:id="@+id/recUserBackgroundPanel"
+    android:background="@drawable/rounded_style_white_4_sides">
+
+    <TextView
+        android:id="@+id/recUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="korisničko ime"
+        android:textColor="@color/black"></TextView>
+
+</LinearLayout>

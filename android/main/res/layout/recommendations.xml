@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFEB3B"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/frontPageLogo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"></ImageView>
+
+        <ImageButton
+            android:id="@+id/bookInfoMeniButton"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/menu_item"
+            android:text="klik"></ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#FFEB3B"
+        android:orientation="vertical">
+
+
+        <TableRow
+            android:id="@+id/bookIngoWhitePanel"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/rounded_style_white"
+            android:paddingBottom="10dp"
+            android:translationY="25dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/bookInfoImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/bookInfoName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/bookInfoAutor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/bookInfoNumOfPages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/bookInfoYear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"></TextView>
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+                    <ScrollView
+                        android:id="@+id/bookInfoDataRightPane"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/bookInfoDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"></TextView>
+
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/recommenrInfoGrayPanel"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/rounded_style_gray"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="25dp"
+            android:translationY="14dp">
+
+            <LinearLayout   android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recommendationUsers"
+                    android:layout_width="match_parent"
+                    android:paddingTop="20dp"
+                    android:layout_height="430dp"
+                    android:layout_weight="1">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:translationY="-120dp"
+            android:background="#B3B3B3"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/dataRecommendAccept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_green"
+                    android:text="potvrdi"></Button>
+
+                <Button
+                    android:id="@+id/dataRecommendCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_red"
+                    android:text="odustani"></Button>
+
+            </LinearLayout>
+        </TableRow>
+
+
+    </LinearLayout>
+
+</LinearLayout>

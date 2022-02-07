@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/frontPageLogo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+
+            android:adjustViewBounds="true"></ImageView>
+
+        <ImageButton
+            android:id="@+id/bookInfoMeniButton"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/menu_item"
+            android:text="klik"></ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_style_white"
+            android:id="@+id/myDataMojiPodaci"
+            android:translationY="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MOJI PODACI"
+                android:textColor="@android:color/black"
+                android:textSize="18dp">
+
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/myAccountData"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/white"
+            android:paddingBottom="30dp"
+            android:translationY="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/myAccountDataLayout"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ime i prezime"
+                        android:textColor="@color/black"></TextView>
+
+                    <TextView
+                        android:id="@+id/myAccountNameSurname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="21dp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="broj telefona"
+                        android:textColor="@color/black"></TextView>
+
+                    <TextView
+                        android:id="@+id/myAccountTel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="21dp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="adresa"
+                        android:textColor="@color/black"></TextView>
+
+                    <TextView
+                        android:id="@+id/myAccountAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="21dp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="korisničko ime"
+                        android:textColor="@color/black"></TextView>
+
+                    <TextView
+                        android:id="@+id/myAccountUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="21dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_purple_2"
+                        android:id="@+id/myAccountDataChange"
+                        android:text="promeni podatke"></Button>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_purple_2"
+                        android:id="@+id/myAccountPasswordChange"
+                        android:text="promeni lozinku"></Button>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/myAccountReccmendations"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@drawable/rounded_style_gray"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PREPORUKE"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                  <androidx.recyclerview.widget.RecyclerView
+                       android:id="@+id/myAccountAllReccomendations"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                   </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </TableRow>
+
+
+    </LinearLayout>
+
+</LinearLayout>
